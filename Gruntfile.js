@@ -29,7 +29,7 @@ module.exports = function(grunt) {
         watch: {
             scripts: {
                 files: [
-                    'src/js/**/*.js'
+                    'app/assets/scripts/**/*.js'
                 ],
                 tasks: ['concat']
             },
@@ -41,12 +41,13 @@ module.exports = function(grunt) {
 
         uglify: {
             options: {
-                mangle: false,
-                banner:bannerFiles
+              mangle: false,
+              engine: require('uglify-js'),
+              banner:bannerFiles
             },
             main: {
                 files: {
-                    'src/js/**/*.js':''
+                    'app/assets/scripts/app.min.js':['app/assets/scripts/app.js']
                 }
             }
         },
@@ -106,7 +107,7 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-uglify-es');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-sass');
@@ -114,5 +115,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
 
     grunt.registerTask('dev', ['sass','watch']);
-    grunt.registerTask('build'  , ['sass','cssmin']);
+    grunt.registerTask('build'  , ['sass','cssmin', 'uglify']);
 };

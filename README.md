@@ -41,7 +41,7 @@ $ npm run test:coverage
 # irá assistir as modificações realizadas e compilar os arquivos para gerar o css da aplicação.
 $ grunt dev
 
-# gera os arquivos minificados para produção.
+# gera os arquivos minificados  de ``css`` e ``js`` para produção.
 $ grunt build
 ```
 
