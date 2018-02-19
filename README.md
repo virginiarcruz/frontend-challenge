@@ -17,21 +17,31 @@ Projeto desenvolvido para seleção de FrontEnd na [Conta Azul](https://contaazu
 
 
 ### Testes
-
+``` bash
     $ npm run test
-    $ npm run test:tdd #roda os testes em watch
-    $ npm run test:coverage # produz relatórios de cobertura para os testes realizados
+
+    # roda os testes em watch
+    $ npm run test:tdd
+
+    # produz relatórios de cobertura para os testes realizados
+    $ npm run test:coverage
+  ```
 
 
 ### Build
 
   - Compilar os arquivos otimizados para produção na pasta ``dist`` na raiz do projeto.
 
-    $ npm run build
+      $ npm run build
 
 
 ### Para editar o Sass e gerar os arquivos para produção
 
-    $ grunt dev  # irá assistir as modificações realizadas e compilar os arquivos para gerar o css da aplicação.
-    $ grunt build # gera os arquivos minificados para produção.
+```bash
+    # irá assistir as modificações realizadas e compilar os arquivos para gerar o css da aplicação.
+    $ grunt dev
+
+    # gera os arquivos minificados para produção.
+    $ grunt build
+```
 
