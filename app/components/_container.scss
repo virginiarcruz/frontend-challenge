@@ -1,0 +1,27 @@
+// CONTAINER
+
+.container {
+    @include size(85%, 100%);
+    max-width: 1200px;
+    margin: 0 auto;
+    background: $color-gray-default;
+    overflow: hidden;
+    .content {
+        padding: 3em;
+        margin-top: 3.75em;
+    }
+}
+
+.box {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    .card:nth-child(1), .card:nth-child(3) {
+      .card-footer-item {
+        display: none;
+      }
+    }
+}
+

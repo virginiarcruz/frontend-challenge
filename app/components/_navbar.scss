@@ -1,0 +1,21 @@
+// ==========================================================================
+// NAVBAR
+// ==========================================================================
+
+
+.navbar {
+    min-height: 3.75em;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    background: $color-base;
+    top: 0;
+    .navbar-brand {
+        display:block;
+        text-align: center;
+        padding: 1em;
+    }
+    .navbar-brand-img {
+        height: 1.5em;
+    }
+}

@@ -1,0 +1,29 @@
+// ==========================================================================
+// Card Footer
+
+.card {
+    .card-footer {
+        background: lighten( $color-gray-default, 3);
+        color: $color-text-footer;
+        font-size: .6em;
+        padding: 1.5em 1em;
+    }
+    .card-footer-item {
+      display: inline-block;
+      width: 45%;
+      padding-bottom: .2em;
+      font-size: 1.9em;
+      color: $color-text-header;
+      .card-footer-title {
+        font-size: .6em;
+        color: $color-text-footer;
+        padding-bottom: .5em;
+      }
+      .card-footer-unity {
+        font-size: .7em;
+      }
+    }
+    .card-footer-txt {
+      padding-top: 1em;
+    }
+}

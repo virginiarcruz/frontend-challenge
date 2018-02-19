@@ -1,0 +1,12 @@
+// ==========================================================================
+// CARDS
+// ==========================================================================
+
+.card {
+    width: 27%;
+    min-height: 8em;
+    background: $color-base;
+    text-align: center;
+    @include border-radius(4px);
+    @include box-shadow(0px, 0px, 6px, -3px, $color: lighten( $color-gray-shadow, 0.1 ));
+}

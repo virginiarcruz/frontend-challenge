@@ -1,0 +1,19 @@
+// ==========================================================================
+// TEMPERATURE CARDS
+// ==========================================================================
+
+
+.card {
+    .card-temperature {
+        font-size: 4.5em;
+        padding: .6em 0;
+        .card-degree {
+          font-size: .8em;
+          vertical-align: top;
+        }
+    }
+}
+
+.color-blue { color: $color-blue; }
+.color-orange { color: $color-orange; }
+.color-red { color: $color-red; }

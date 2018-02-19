@@ -1,0 +1,46 @@
+// RESETS 
+
+ * {margin:0; padding: 0;}
+ html, body {
+  font-family: Helvetica, Arial,  sans-serif;
+  height:100%;
+ }
+ *, *:before, *:after {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+ }
+
+ @charset 'UTF-8';html,body {
+  height: 100%
+}
+
+html,body,div,span,h1,h2,h3,h4,h5,h6,p,blockquote,a,img,small,sub,b,dl,dd,dt,ul,li,label,article,section,details,footer,header,iframe,menu,nav,input,textarea,select {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-smooth: always;
+  text-rendering: optimizeLegibility
+}
+
+.clearfix:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0
+}
+
+a { text-decoration: none;}
