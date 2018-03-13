@@ -1,6 +1,4 @@
-# Desafio FrontEnd
-
-Projeto desenvolvido para seleção de FrontEnd na [Conta Azul](https://contaazul.com)
+# FrontEnd Challenge
 
 ## Instalação
 
